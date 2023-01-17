@@ -1,5 +1,5 @@
 {
-  "name": "nest-typescript-starter",
+  "name": "webscrapper",
   "private": true,
   "version": "1.0.0",
   "description": "Nest TypeScript starter repository",
@@ -8,7 +8,7 @@
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
-    "start:dev": "nest start --watch",
+    "dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
