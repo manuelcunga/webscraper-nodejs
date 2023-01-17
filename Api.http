@@ -1,0 +1,10 @@
+
+// Setup
+GET  http://localhost:3000/api/v1
+content-type: application/json
+
+###
+
+// List all product
+
+GET  http://localhost:3000/api/v1/products
