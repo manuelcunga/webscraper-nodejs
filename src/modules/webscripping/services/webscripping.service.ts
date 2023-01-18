@@ -3,11 +3,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class WebScripperService {
-  constructor() {
-    this.scripping();
-  }
-
-  async scripping() {
+  async scripping(): Promise<any> {
     const browser: any = await puppeteer.launch();
     const page: any = await browser.newPage();
 
@@ -31,8 +27,8 @@ export class WebScripperService {
         });
     });
 
-    lenovoLaptops.sort((a: any, b: any) => a.price - b.price);
+    const data = lenovoLaptops.sort((a: any, b: any) => a.price - b.price);
     await browser.close();
-    console.log('Teste da class vindo', lenovoLaptops);
+    return data;
   }
 }
