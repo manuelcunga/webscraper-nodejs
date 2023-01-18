@@ -32,6 +32,12 @@
 
 ## Installation
 
+### install the nest js cli global, if you don´t have installed
+
+```bash
+$ npm install -g @nestjs/cli
+```
+
 ```bash
 $ npm install
 ```
